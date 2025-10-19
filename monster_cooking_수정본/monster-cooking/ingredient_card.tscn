@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhy00m84gsshb"]
+
+[ext_resource type="Script" uid="uid://clxlxyjkhlq2f" path="res://ingredient_card.gd" id="1_e62xi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e62xi"]
+size = Vector2(1147, 338)
+
+[node name="IngredientCard" type="TextureRect"]
+script = ExtResource("1_e62xi")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 407.0
+offset_top = 470.0
+offset_right = 447.0
+offset_bottom = 493.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(572, 362)
+shape = SubResource("RectangleShape2D_e62xi")

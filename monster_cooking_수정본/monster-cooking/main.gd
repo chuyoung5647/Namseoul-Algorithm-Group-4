@@ -1,7 +1,7 @@
 extends Node2D
 
 # --- 씬 경로(너의 프로젝트 경로에 맞게 변경) ---
-const IngredientCardScene = preload("res://scenes/ingredient_card.tscn") 
+const IngredientCardScene = preload("res://scenes/ingredient_card.tscn")
 # 만약 씬이 res://scenes/ingredient_card.tscn 이면 위 경로를 바꿔줘!
 
 # --- 재료(덱) 관리 ---

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Monster cooking"
+config/name="2025/10/20 수정중"
 run/main_scene="uid://ck51qg7u7qbf8"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 

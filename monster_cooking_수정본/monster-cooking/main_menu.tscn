@@ -43,8 +43,3 @@ offset_right = 568.55994
 offset_bottom = 194.95999
 theme_override_font_sizes/font_size = 41
 text = "게임시작"
-
-[node name="CardContainer" type="GridContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0

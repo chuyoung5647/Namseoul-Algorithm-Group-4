@@ -127,4 +127,21 @@
 		process_satifaction_logic 함수를 만들어 만족도 관련 내용을 넣음.
 		
 		_on_game_over 함수에 연동하여 만족도가 0이된다면 타이머의 시간이 다 되었을때와 같이 게임오버되게 만듬.
-		
+
+		음식을 5초안에 만들었을떄: 만족도 +10
+		음식을 10초 안에 만들었을떄: 만족도 +5
+		음식을 15초 안에 만들었을떄: 만족도 +1
+		음식을 그 이상 걸려서 만들었을떄: 만족도 -3
+		음식을 만들지 못했을떄: 만족도 -5
+
+		위의 사항들은 코드 윗부분에 모아둬서 향후 밸런스패치가 용이하도록 만듬.
+			const SATISFACTION_START: int = 50        # 기본 만족도
+			const SATISFACTION_TIME_TIER_1: float = 5.0  # 5초 이내
+			const SATISFACTION_SCORE_TIER_1: int = 10   # +10점
+			const SATISFACTION_TIME_TIER_2: float = 10.0 # 10초 이내
+			const SATISFACTION_SCORE_TIER_2: int = 5    # +5점
+			const SATISFACTION_TIME_TIER_3: float = 15.0 # 15초 이내
+			const SATISFACTION_SCORE_TIER_3: int = 1    # +1점
+			const SATISFACTION_SCORE_LATE: int = -3     # 15초 초과 시
+			const SATISFACTION_SCORE_FAIL: int = -5     # 요리 실패 시
+			

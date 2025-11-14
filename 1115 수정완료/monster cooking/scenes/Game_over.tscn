@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://duh0l3pl6c7bq"]
+
+[ext_resource type="Texture2D" uid="uid://c31xgew2k58jg" path="res://images/test_image/background/background_test_gameover.png" id="1_1fmsk"]
+[ext_resource type="Script" uid="uid://bpy4evmj8gf3h" path="res://scripts/Game_over.gd" id="1_pmslm"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pmslm")
+
+[node name="gameover_bacckground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_1fmsk")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 180.0
+offset_right = 222.0
+offset_bottom = 275.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 45
+text = "총점:"
+
+[node name="SuccessLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 256.0
+offset_right = 208.0
+offset_bottom = 343.0
+theme_override_font_sizes/font_size = 42
+text = "성공횟수:"
+
+[node name="FailLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 337.0
+offset_right = 238.0
+offset_bottom = 420.0
+theme_override_font_sizes/font_size = 42
+text = "실패횟수:"
+
+[node name="RetryButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 707.0
+offset_top = 184.0
+offset_right = 901.0
+offset_bottom = 276.0
+theme_override_colors/font_outline_color = Color(0.83137256, 0, 0, 1)
+theme_override_font_sizes/font_size = 42
+text = "다시하기"
+
+[node name="MenuButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 330.0
+offset_right = 902.0
+offset_bottom = 422.0
+theme_override_colors/font_outline_color = Color(0.83137256, 0, 0, 1)
+theme_override_font_sizes/font_size = 42
+text = "메인메뉴로"

@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck51qg7u7qbf8"]
+
+[ext_resource type="Script" uid="uid://dksa3f5x8rh4c" path="res://scripts/main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://bdg3wcqgdm8up" path="res://images/test_image/background/background_main_menu.png" id="2_ekxnf"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_06t4h")
+
+[node name="background_img" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ekxnf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 374.0
+offset_top = -37.0
+offset_right = 806.0
+offset_bottom = 268.0
+theme_override_colors/font_color = Color(0.12591085, 0.12591085, 0.12591082, 1)
+theme_override_font_sizes/font_size = 72
+text = "몬스터요리사
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 11.936001
+anchor_bottom = 4.7260003
+offset_left = 921.0
+offset_top = 146.0
+offset_right = 624.55994
+offset_bottom = 28.959991
+theme_override_font_sizes/font_size = 41
+text = "게임시작"
+
+[node name="CardContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

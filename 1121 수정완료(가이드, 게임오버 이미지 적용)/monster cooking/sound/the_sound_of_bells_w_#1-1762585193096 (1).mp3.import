@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ckut216mt6cws"
+path="res://.godot/imported/the_sound_of_bells_w_#1-1762585193096 (1).mp3-faba76dccb7445a9b4a46605d4ee6253.mp3str"
+
+[deps]
+
+source_file="res://sound/the_sound_of_bells_w_#1-1762585193096 (1).mp3"
+dest_files=["res://.godot/imported/the_sound_of_bells_w_#1-1762585193096 (1).mp3-faba76dccb7445a9b4a46605d4ee6253.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
